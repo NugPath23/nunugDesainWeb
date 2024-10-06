@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Nugraha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Asset 1@4x.png">
+    <link rel="manifest" href="manifest.json">
+    <script src="app.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+        
+        <div>
+            <a href="logo.html"><img src="/logohmif.png" alt="logolkmmtd"></a>
+        </div>
+    </nav>
+
+    <div class="container-input">
+        <div class="container2-input">
+            <div class="judul-input">
+                <p class="judulnya">Feedback nya kaka</p>
+            </div>
+            <div class="bag-name">
+                <form class="isi-name">
+                    <input class="name-input" type="text" id="name" name="name" placeholder="Username">
+                </form>
+            </div>
+            <div class="bag-email">
+                <form class="isi-email">
+                    <input class="email-input" type="text" id="name" name="email" placeholder="Email" >
+                </form>
+            </div>
+            <div class="bag-pesan">
+                <form class="isi-pesan">
+                    <textarea class="message-input" id="message" name="message" rows=5 placeholder="Message"></textarea>
+                </form>
+            </div>
+
+            <div class="bag-opsi">
+                <form>
+                    <label for="options">Ketegori pesan:</label>
+                    <select id="options" name="options">
+                      <option value="option1">Pertanyaan</option>
+                      <option value="option2">Saran</option>
+                      <option value="option3">Masalah</option>
+                    </select>
+                  </form>
+            </div>
+
+            <div class="bag-radio">
+                <input class="radio-ya" name="opsi" type="radio">
+                <label class="tulisan-ya" for="Ya">Ya</label>
+                <input class="radio-tidak" name="opsi" type="radio">
+                <label class="tulisan-tidak" for="Tidak">Tidak</label>
+            </div>
+
+            <div class="bag-submit">
+                <form id="myForm" onsubmit="showAlert(); return false;">
+                    <button class="tombol-submit" type="submit">submit</button>
+                </form>
+            </div> 
+
+            <script>
+                function showAlert() {
+                    alert("Form berhasil dikirim, YEAYYYY");
+                }
+            </script>
+
+            <div class="iconIGWA">
+                <h3>Contact me</h3>
+                <div class="WAstyle">
+                    <img class="WA" src="26.png" alt="Whatsapp">
+                    <p class="nomor">082288796078</p>
+                </div>
+                <div class="IGstyle">
+                    <a href="https://www.instagram.com/nugraha_2312/" target="_blank"><img class="IG" src="27.png" alt="Instagram"></a>
+                    <a href="https://www.instagram.com/nugraha_2312/" target="_blank"><p class="IG-nugi">@nugraha_2312</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

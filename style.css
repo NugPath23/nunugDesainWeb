@@ -1,0 +1,417 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-size: 230vh;
+    font-family: 'tahoma';
+}
+
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav div img {
+    width:  10%;
+}
+
+nav div a{
+    display: flex;
+    justify-content: end;
+}
+
+body nav ul{
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    gap: 2rem;
+
+}
+
+body nav ul li a{
+    padding: 5px 0;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 2px solid rgba(255, 0, 0, 0);
+}
+
+body nav ul li a:hover{
+    color: rgb(0, 72, 255);
+    border-bottom: 2px solid rgb(0, 72, 255);
+}
+
+/* index CSS */
+.logo{
+    width: 200px;
+    padding: 10px 0 0;
+    
+}
+
+.logo-unand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,p{
+    text-align: center;
+    color: black;
+}
+
+p{
+    color: black;
+    font-size: 20px;
+}
+
+.login-sign{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;   
+}
+
+.login-button, .sign-button{
+    margin: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 2px solid rgba(255, 0, 0, 0);
+}
+
+.login-button:hover{
+    color: rgb(0, 72, 255);
+    border-bottom: 2px solid rgb(0, 72, 255);
+}
+
+.sign-button:hover{
+    color: rgb(0, 72, 255);
+    border-bottom: 2px solid rgb(0, 72, 255);
+}
+
+
+/* about css */
+.aboutme{
+    text-align: center;
+    color: black;
+}
+
+.aboutme h1{
+    color: black;
+}
+
+.aboutme p {
+    font-size: 1.5rem;
+}
+
+.fotonugi{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 400px;
+}
+
+/* CSS Contact */
+.WAstyle{
+    padding: 10px 0 10px 15px;
+    display: flex;
+    align-items: center;
+}
+
+div .WA{
+    width: 40px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.IGstyle{
+    padding: 10px 0 10px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.IGstyle a{
+    text-decoration: none;
+}
+
+div .IG{
+    width: 40px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.nomor{
+    color: black;
+    padding: 0 0 0 10px;
+    font-size: 16px;
+}
+
+.IG-nugi{
+    color: black;
+    padding: 0 0 0 10px;
+    font-size: 16px;
+}
+
+h3 {
+    color: black;
+    padding: 10px 0 10px 15px;
+}
+
+.container-input{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container2-input{
+    width: 420px;
+    padding: 30px;
+    box-sizing: content-box;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.judul-input{
+    display: flex;
+    justify-content: center;
+}
+
+.judulnya{
+    color: black;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.bag-name, .bag-email, .bag-pesan {
+    margin: 10px;
+    border: solid black;
+    border-radius: 5px;
+}
+
+.isi-name{
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.name-input{
+    padding: 5px;
+    font-size: 20px;
+    color: black;
+    background: transparent;
+    border: none;
+    width: 100%;
+}
+
+.isi-email{
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.email-input{
+    padding: 5px;
+    font-size: 20px;
+    color: black;
+    background: transparent;
+    border: none;
+    width: 100%;
+}
+
+.isi-pesan{
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.message-input{
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+    background: transparent;
+    border: none;
+    resize: none;
+    width: 100%;
+    
+}
+
+::placeholder{
+    color: black;
+    opacity: 0.5;
+}
+
+.tombol-submit{
+    width: 150px;
+    padding: 10px;
+    border: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: rgba(0, 72, 255,0.6);
+    color: white;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.bag-submit{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+.tulisan-ya, .tulisan-tidak{
+    color: black;
+}
+
+.bag-opsi{
+    padding: 10px 0 10px 15px;
+}
+
+.bag-opsi form label{
+    color: black;
+}
+
+.bag-radio{
+    padding: 10px 0 10px 15px;
+    accent-color: rgb(0, 72, 255);
+}
+
+#options{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.tombol-submit:hover{
+    background-color: rgb(0, 72, 255);
+}
+
+/* logo CSS */
+
+#logo{
+    background-color: #171c32;
+}
+
+.container-pendahuluan{
+    display: flex;
+    justify-content: space-between;
+}
+
+.foto-logohmif{
+    margin: 10px;
+}
+
+.gambar-logohmif{
+    width: 400px;
+}
+
+.text-pendahuluan{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.text-pendahuluan p{
+    text-align: left;
+    color: white;
+    font-size: 60px;
+}
+
+.container-hmif-unand{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200vh;
+    height: 300px;
+}
+
+.foto-hmif-unand{
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.gambar-hmifunand{
+    width: 400px;
+}
+
+.text-hmif-unand{
+    text-align: center;
+    padding-left: 20px;
+}
+
+.text-hmif-unand p{
+    text-align: right;
+    color: white;
+    font-size: 60px;
+}
+
+.foto-penjelasan{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 0 0;
+}
+
+.gambar-penjelasanhmif{
+    width: 2000px;
+}
+
+.container-sosmedhmif{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 255, 255, 0.5);
+    padding: 20px;
+}
+
+.website-hmif{
+    margin-right: 20px;
+}
+
+.website-hmif i{
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.website-hmif a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.instagram-hmif{
+    margin-left: 20px;
+}
+
+.instagram-hmif i{
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.instagram-hmif a{
+    color: white;
+    text-decoration: none;  
+    font-size: 30px;
+}
